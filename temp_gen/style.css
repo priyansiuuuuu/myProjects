@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.txt-big{
+    font-size: 3rem;
+}
+
+.top-margin{
+    margin-top: 1em;
+}
+
+.padding{
+    padding: 10px;
+}
+
+.txt-mid{
+    font-size: 2rem;
+}
+.container{
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.681);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box{
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgba(36, 192, 192, 0.862);
+    box-shadow: 10px 10px 15px #0000005f;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.convert-from{
+    display: flex;
+    justify-content: space-around;
+}
+
+.convert-into{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .main-box select{
+    width: 75%;
+    height: 10%;
+    font-size: 2.4rem;
+}
+
+.container .main-box .convert-from .select, .container .main-box .convert-into .select{
+    margin-top: 10px;
+    border: none;
+}
+
+.container .main-box .input{
+    display: flex;
+    justify-content: center;
+}
+
+.container .main-box .input input[type=number]{
+    height: 10%;
+    width: 50%;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .main-box .button{
+    display: flex;
+    justify-content: center;
+}
+
+.container .main-box .button .btn{
+    display: block;
+    width: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+.container .main-box .output{
+    display: flex;
+    justify-content: center;
+}
+
+.container .main-box .output .output-here{
+    font-size: 2rem;
+    margin-top: 15px;
+}
+/* ############media query############# */
+
+@media (max-width: 1024px) {
+    .main-box {
+        width: 70%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .txt-big {
+        font-size: 2.5rem;
+    }
+
+    .txt-mid {
+        font-size: 1.8rem;
+    }
+
+    .container .main-box select {
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .container .main-box .input input[type=number] {
+        width: 60%;
+        font-size: 1.4rem;
+    }
+
+    .container .main-box .button .btn {
+        width: 60%;
+        font-size: 1.4rem;
+    }
+
+    .container .main-box .output .output-here {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .txt-big {
+        font-size: 2rem;
+    }
+
+    .txt-mid {
+        font-size: 1.5rem;
+    }
+
+    .container .main-box select {
+        width: 90%;
+        font-size: 1.8rem;
+    }
+
+    .container .main-box .input input[type=number] {
+        width: 75%;
+        font-size: 1.3rem;
+    }
+
+    .container .main-box .button .btn {
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+    .container .main-box .output .output-here {
+        font-size: 1.6rem;
+    }
+}
